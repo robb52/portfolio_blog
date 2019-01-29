@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PortfolioBlog</title>
+    <title>Rob Brown - Part Designer, Part Developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +13,15 @@
   </head>
 
   <body>
+    <header id="main_navigation" class="clearfix">
+      <a href="#", class="name">Ro Gallant-Brown</a>
+      <nav>
+        <%= link_to "Articles", posts_path %>   
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
     <%= yield %>
   </body>
 </html>
