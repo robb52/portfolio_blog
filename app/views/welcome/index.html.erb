@@ -1,0 +1,26 @@
+<div class="wrapper wrapper_padding clearfix">
+  <div class="col-1 about homepage_content">
+    <h2>About</h2>
+    <hr>
+    <p>Brunch iPhone kogi taxidermy viral vinyl keffiyeh jianbing man braid tousled. Keffiyeh yr snackwave drinking vinegar.Kitsch taxidermy woke VHS yr adaptogen.</p> <p>Quinoa normcore fanny pack forage, four dollar toast gastropub 8-bit single-origin coffee. Health goth artisan lo-fi crucifix green juice.</p> <p>Polaroid gluten-free chartreuse lyft shabby chic, literally pabst DIY meh affogato chia farm-to-table sartorial cliche deep v. Poutine pitchfork direct trade cliche heirloom tattooed, sartorial hoodie cardigan waistcoat stumptown succulents photo booth <a href="#">unicorn</a>.</p>
+  </div>
+  <div class="col-2 homepage_content">
+    <h2>Stuff I've Written</h2>
+      <hr>
+
+      <% @posts.each do |post| %>
+        <h3><a href="#"><%= link_to post.title, post %></h3></a>
+        <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+      <% end %>
+  </div>
+  <div class="col-3 homepage_content">
+      <h2>Stuff I've Built</h2>
+      <hr>
+      <h3><a href="#">Unicasts</h3>
+      <p class="date">Friday January 25th</p>
+      <h3><a href="#">How I do learn "X"?</h3>
+      <p class="date">Friday January 25th</p>
+      <h3><a href="#">Strive for the uncomfortable</h3>
+      <p class="date">Friday January 25th</p>
+  </div>
+  </div>

@@ -14,7 +14,7 @@
 
   <body>
     <header id="main_navigation" class="clearfix">
-      <a href="#", class="name">Ro Gallant-Brown</a>
+      <%= link_to "Ro Gallant-Brown", root_path, class: "name" %>
       <nav>
         <%= link_to "Articles", posts_path %>   
         <a href="#">Projects</a>
@@ -23,5 +23,17 @@
     </header>
 
     <%= yield %>
+
+    <footer id="main_footer"> 
+      <p class="copyright">&copy; 2019 Ro Gallant-Brown</p>
+      <nav>
+        <a href="http://www.linkedin.com/rogallantbrown" target="blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </nav>
+    </footer>
+
   </body>
 </html>
