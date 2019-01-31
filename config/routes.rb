@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
 
 
-get 'contacts', to: 'contacts#create'
+  get 'contacts', to: 'contacts#create'
   
   get 'welcome/index'
   root 'welcome#index'
