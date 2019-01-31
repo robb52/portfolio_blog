@@ -96,12 +96,13 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
 
   ActionMailer::Base.smtp_settings = {
-    :address => 'smtp.sendgrid.net',
-    :port => 587,
-    :authentication => :plain,
-    :user_name => ENV['SENDGRID_USERNAME'],
-    :password => ENV['SENDGRID_PASSWORD'],
-    :domain => 'portfolio-blog-app.herokuapp.com',
+    :form                 => 'brown4homes@yahoo.com',
+    :user_name            => ENV['SENDGRID_USERNAME'],
+    :password             => ENV['SENDGRID_PASSWORD'],
+    :domain               => 'heroku.com',
+    :address              => 'smtp.sendgrid.net',
+    :port                 => 587,
+    :authentication       => :plain,
     :enable_starttls_auto => true
   }
 end
