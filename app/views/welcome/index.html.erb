@@ -10,7 +10,7 @@
 
       <% @posts.each do |post| %>
         <h3><a href="#"><%= link_to post.title, post %></h3></a>
-        <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+        <p class="date"><%#= post.created_at.strftime("%A, %b %d") %></p>
       <% end %>
   </div>
   <div class="col-3 homepage_content">
@@ -18,7 +18,7 @@
       <hr>
       <% @projects.each do |project| %>
         <h3><a href="#"><%= link_to project.title, project %></h3></a>
-        <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
+        <p class="date"><%#= project.created_at.strftime("%A, %b %d") %></p>
       <% end %>
   </div>
 </div>

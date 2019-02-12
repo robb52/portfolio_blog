@@ -32,6 +32,12 @@
         <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        
+        <% if !user_signed_in? %>  
+          <%= link_to new_user_session_path do %>
+            <i class="fa fa-user"></i>
+          <% end %>
+        <% end %>
       </nav>
     </footer>
 
